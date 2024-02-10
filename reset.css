@@ -1,0 +1,34 @@
+/* Reset de Estilos */
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Normalización de Estilos de Listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Normalización de Estilos de Enlaces */
+a {
+  text-decoration: none;
+  color: inherit; /*hereda del padre*/
+}
+
+/* Normalización de Estilos de Encabezados */
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+/* Otros Estilos de Normalización */
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Agregar estilos adicionales según sea necesario */

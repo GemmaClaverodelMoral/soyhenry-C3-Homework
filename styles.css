@@ -42,20 +42,20 @@ body {
 
 #card-container {
   background-color:#ebc7f3;
-  width: 85vw;
-  margin:auto;
+  width: 50vw;
+  margin:auto; /*centrado en la pagina*/
   margin-top: 1.5em;
   border:2px solid #500b5f;
   border-radius: 15px;
-  padding: 2em;
+  padding: 1em;
   display:flex; /*para posicionar los elementos dentro de su contenedor: Por defecto en fila*/
-  justify-content:space-evenly;/*misma distancia entre elementos y los bordes*/
+  justify-content:space-between;/*misma distancia entre elementos y los bordes*/
 }
 .card {
     height: fit-content; 
-    width: fit-content;
+    margin: 1em;
     border: 2px solid #c30dec;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 0;
     border-radius: 10%;
     transition: 1s;
     display: flex;
@@ -74,27 +74,44 @@ body {
 }
 
 /* Estilos  para el enlace */
-a {
-  color: #57033a; /* Color del texto predeterminado */
+.enlace-tipo-1 {
+  color: #fc04a6; /* Color del texto predeterminado */
   text-decoration: underline;
   border-bottom: 2px solid transparent; /* Línea inferior invisible por defecto */
   transition: color 0.3s, border-bottom-color 0.3s; /* Transiciones suaves */
+  padding: 5px;
 }
 
 /* Estilo al pasar por encima del enlace */
-a:hover {
-  color: #db3bae; /* Color del texto al pasar por encima */
-  border-bottom-color: #ff5733; /* Línea inferior visible al pasar por encima */
+.enlace-tipo-1:hover {
+  background: #fc04a6;
+  color: white;
+  text-decoration: none;
+  padding:10px;
+  transition: 2s;
+}
+
+.enlace-tipo-1:active {
+  border: 3px solid #500b5f;
 }
 
 /* Estilo al hacer clic en el enlace */
-a:active {
-  color: #cc3e18; /* Color del texto al hacer clic */
-  border-bottom-color: #5b0555; /* Línea inferior visible al hacer clic */
+.enlace-tipo-1::backdrop {
+  color: #fc04a6; /* Color del texto al hacer clic */
+  width: auto;
+}
+
+.enlace-tipo-1:visited {
+  color: black;
 }
 
 #formulario {
   display:flex;
   flex-direction: column;
 
+}
+:target {
+  background: gold;
+  color: #333;
+  padding: 5px;
 }
